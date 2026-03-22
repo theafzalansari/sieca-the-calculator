@@ -5,7 +5,7 @@ This project supports advanced mathematical operations along with a clean UI and
 
 ## 🚀 Live Demo
 
-👉 (Add your Vercel link here after deployment)
+👉 https://sieca-the-calculator.vercel.app/
 
 ---
 

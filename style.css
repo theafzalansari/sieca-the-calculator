@@ -130,8 +130,10 @@ button{
         grid-template-columns: 1fr;   /* stack layout */
         padding: 15px;
         gap: 15px;
-        transform: scale(0.85);
+        transform: scale(0.9);
         transform-origin: top center;
+        position: relative;
+        left : -4%
     }
 
     .calculation {

@@ -155,7 +155,8 @@ button{
     }
 
     #equal {
-        grid-row: span 1;  /* remove tall button */
+        grid-row: span 2;  
+        grid-column: span 1;
     }
 
     #zero {

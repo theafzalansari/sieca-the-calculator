@@ -3,6 +3,7 @@ body{
     background-color: #dadff7;
     margin: 0;
     font-family: "Roboto Mono", monospace;
+    overflow-x: hidden;
 }
 
 .calculator {
@@ -123,8 +124,48 @@ button{
     border-radius: 5px;
 }
 
-@media (max-width: 600px) {
-  .calculator {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 768px) {
+
+    .calculator {
+        grid-template-columns: 1fr;   /* stack layout */
+        padding: 15px;
+        gap: 15px;
+        transform: scale(0.85);
+        transform-origin: top center;
+    }
+
+    .calculation {
+        grid-column: span 1;
+    }
+
+    .history {
+        grid-column: span 1;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(6, 1fr); /* 4 buttons per row */
+        gap: 10px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #equal {
+        grid-row: span 1;  /* remove tall button */
+    }
+
+    #zero {
+        grid-column: span 2; /* keep wide 0 */
+    }
+
+    .display input {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .mode-toggle {
+        text-align: center;
+    }
 }
